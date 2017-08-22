@@ -1,5 +1,7 @@
+/*Navbar intro page */
 .navbar {
-  background-color: gray;
+  background-color: #DDDDDD;
+  color:#222222 !important;
 }
 #intro {
     min-height: 100vh;
@@ -18,13 +20,39 @@
     width:40vh
 }
 
+/*About section */
 #about {
+  min-height: 60vh;
+  background-color: #DDDDDD;
+  padding-top:80px;
+  text-align: center;
+}
+#about hr {
+    border-color: #222222 !important;
+    border-width: 3px !important;
+    max-width: 50px !important;
+}
+#about h2 {
+  color:#222222;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 6vh;
+}
+.avatar {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+
+  }
+/*skills section */
+
+#skills {
   min-height: 60vh;
   background-color: #222222;
   padding-top:80px;
 }
 
-#about h2 {
+#skills h2 {
   color:white;
   text-align: center;
   padding-bottom: 40px;
@@ -52,11 +80,13 @@
   }
   .skills .col-md-12 {text-align: center;}
 }
-#about hr {
+#skills hr {
     border-color: #E1E1E1 !important;
     border-width: 3px !important;
     max-width: 50px !important;
 }
+
+/*portofolio */
 
 #portofolio {
   background-color: #DDDDDD;
@@ -71,5 +101,22 @@
   color:#222222;
   text-align: center;
   padding-bottom: 40px;
-  padding-top: 6vh;
+  padding-top: 10vh;
+
+}
+#portofolio .row {
+  padding-top: 10vh;
+}
+
+
+
+/*Contact */
+#contact {
+    background-color: #222222;
+    padding: 50px;
+}
+#contact i {
+  font-size: 50px;
+  padding: 10px;
+  color: #DDDDDD;
 }
