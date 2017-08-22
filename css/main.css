@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex; /* NEW */
+    display: flex;
 }
 .textcard{
     background-color: rgba(255,255,255,.8);
@@ -16,4 +16,37 @@
     margin-top: 40vh;
     padding: 60px;
     width:40vh
+}
+
+#about {
+  min-height: 60vh;
+  background-color: #222222;
+  padding-top:80px;
+}
+
+#about h1 {
+  color:white;
+}
+.devicon-git-plain {
+  max-width: 2em;
+}
+.skills i {
+  display: inline-block;
+  font-size: 150px;
+  padding: 40px;
+  color:#464a4c;
+
+}
+
+.skills i:hover {
+  background-color: #222222;
+}
+
+@media only screen and (max-width : 480px) {
+  .skills i {
+    display: inline-block;
+    font-size: 80px;
+    padding: 20px;
+  }
+  .skills .col-md-12 {text-align: center;}
 }
