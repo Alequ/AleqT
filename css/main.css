@@ -24,8 +24,10 @@
   padding-top:80px;
 }
 
-#about h1 {
+#about h2 {
   color:white;
+  text-align: center;
+  padding-bottom: 40px;
 }
 .devicon-git-plain {
   max-width: 2em;
@@ -49,4 +51,25 @@
     padding: 20px;
   }
   .skills .col-md-12 {text-align: center;}
+}
+#about hr {
+    border-color: #E1E1E1 !important;
+    border-width: 3px !important;
+    max-width: 50px !important;
+}
+
+#portofolio {
+  background-color: #DDDDDD;
+  min-height:60vh;
+}
+#portofolio hr {
+    border-color: #222222 !important;
+    border-width: 3px !important;
+    max-width: 50px !important;
+}
+#portofolio h2 {
+  color:#222222;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 6vh;
 }
