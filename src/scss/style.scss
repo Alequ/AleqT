@@ -29,7 +29,7 @@ $dark-color: #222222;
         margin-top: 40vh;
         padding: 60px;
         width:50vh
-        
+
     }
 
 }
@@ -266,8 +266,12 @@ $dark-color: #222222;
     background-color: $dark-color;
     padding: 50px;
     i {
-      font-size: 50px;
+      font-size: 40px;
       padding: 10px;
       color: $light-color;
+      &:hover {
+        color: $dark-color;
+        background-color: $light-color
+      }
     }
 }
