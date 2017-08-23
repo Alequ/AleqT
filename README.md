@@ -1,1 +1,1 @@
-# AleqT
+# https://alequ.github.io/AleqT/
