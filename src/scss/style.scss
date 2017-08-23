@@ -7,8 +7,9 @@ $dark-color: #222222;
 /*Navbar */
 
 .navbar {
-  background-color: $light-color;
-  color: $dark-color;
+  background-color: $dark-color;
+
+
 }
 
 #intro {
@@ -18,15 +19,21 @@ $dark-color: #222222;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    background-attachment: fixed;
+
+
+    .textcard{
+
+        margin: auto;
+        text-align: center;
+        margin-top: 40vh;
+        padding: 60px;
+        width:50vh
+        
+    }
+
 }
-.textcard{
-    background-color: $dark-color;
-    margin: auto;
-    text-align: center;
-    margin-top: 40vh;
-    padding: 60px;
-    width:40vh
-}
+
 
 /*About section */
 #about {
@@ -34,51 +41,64 @@ $dark-color: #222222;
   background-color: $light-color;
   padding-top:80px;
   text-align: center;
-}
-#about hr {
-    border-color: $dark-color !important;
-    border-width: 3px !important;
-    max-width: 50px !important;
-}
-#about h2 {
-  color:$dark-color;
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 6vh;
-}
-.avatar {
-    max-height: 200px;
-    max-width: 200px;
-    border-radius: 50%;
+  padding-bottom:10vh;
+    hr {
+        border-color: $dark-color !important;
+        border-width: 3px !important;
+        max-width: 50px !important;
+    }
+    h2 {
+     color:$dark-color;
+     text-align: center;
+     padding-bottom: 40px;
+     padding-top: 6vh;
+   }
+   .avatar {
+       max-height: 200px;
+       max-width: 200px;
+       border-radius: 50%;
 
-  }
+
+     }
+
+
+}
+
 /*skills section */
 
 #skills {
   min-height: 60vh;
   background-color: $dark-color;
   padding-top:80px;
+  padding-bottom: 10vh;
+  hr {
+      border-color: #E1E1E1 !important;
+      border-width: 3px !important;
+      max-width: 50px !important;
+    }
+    h2 {
+    color:white;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .devicon-git-plain {
+    max-width: 2em;
+  }
+
 }
 
-#skills h2 {
-  color:white;
-  text-align: center;
-  padding-bottom: 40px;
-}
-.devicon-git-plain {
-  max-width: 2em;
-}
+
 .skills i {
   display: inline-block;
   font-size: 150px;
   padding: 40px;
   color:#464a4c;
-
+  text-align: center;
+  &:hover {
+    background-color: $dark-color;
+  }
 }
 
-.skills i:hover {
-  background-color: $dark-color;
-}
 
 @media only screen and (max-width : 480px) {
   .skills i {
@@ -86,34 +106,157 @@ $dark-color: #222222;
     font-size: 80px;
     padding: 20px;
   }
-  .skills .col-md-12 {text-align: center;}
+
 }
-#skills hr {
-    border-color: #E1E1E1 !important;
-    border-width: 3px !important;
-    max-width: 50px !important;
-}
+
 
 /*portofolio */
 
 #portofolio {
   background-color: $light-color;
   min-height:60vh;
-}
-#portofolio hr {
-    border-color: $dark-color !important;
-    border-width: 3px !important;
-    max-width: 50px !important;
-}
-#portofolio h2 {
-  color:#222222;
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 10vh;
+  padding-bottom: 10vh;
+    hr {
+       border-color: $dark-color !important;
+       border-width: 3px !important;
+       max-width: 50px !important;
+   }
+   .button {
+    font-size: 8px;
+    font-size: 0.8rem;
+    border: 2px solid $dark-color;
+    color: $dark-color;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    position: relative;
+    &:hover {
+      border: 2px solid $dark-color;
+      background-color: $dark-color;
+      color: $light-color;
+    }
 
+    }
+     h2 {
+      color:#222222;
+      text-align: center;
+      padding-bottom: 40px;
+      padding-top: 10vh;
+
+    }
+    .row {
+      padding-top: 10vh;
+    }
+    h5{
+      font-size: 1.3rem;
+    color: #888;
+    }
+    h3{
+      font-size: 2rem;
+      line-height: 1.3em;
+      margin-bottom: 5px;
+    }
+      .tags {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin: 45px auto;
+        li {
+        font-size: 7px;
+        font-size: 0.7rem;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        border: 1px solid $dark-color;
+        color: $dark-color;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding: 3px 5px;
+        margin: 0 3px;
+    }
+  }
 }
-#portofolio .row {
-  padding-top: 10vh;
+
+#portofolio1 {
+  background-color: $dark-color;
+  min-height:60vh;
+    hr {
+       border-color: $dark-color !important;
+       border-width: 3px !important;
+       max-width: 50px !important;
+   }
+   p{
+     color:$light-color;
+   }
+   .button {
+    font-size: 8px;
+    font-size: 0.8rem;
+    border: 2px solid $light-color;
+    color: $light-color;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    position: relative;
+    &:hover {
+      border: 2px solid $light-color;
+      background-color: $light-color;
+      color: $dark-color;
+    }
+
+    }
+
+    .row {
+      padding-top: 10vh;
+    }
+    h5{
+      font-size: 1.3rem;
+    color: #888;
+    }
+    h3{
+      font-size: 2rem;
+      line-height: 1.3em;
+      margin-bottom: 5px;
+      color:$light-color;
+    }
+      .tags {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin: 45px auto;
+        li {
+        font-size: 7px;
+        font-size: 0.7rem;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        border: 1px solid $light-color;
+        color: $light-color;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding: 3px 5px;
+        margin: 0 3px;
+    }
+  }
 }
 
 
@@ -122,9 +265,9 @@ $dark-color: #222222;
 #contact {
     background-color: $dark-color;
     padding: 50px;
-}
-#contact i {
-  font-size: 50px;
-  padding: 10px;
-  color: $light-color;
+    i {
+      font-size: 50px;
+      padding: 10px;
+      color: $light-color;
+    }
 }
