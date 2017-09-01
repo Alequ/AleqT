@@ -1,3 +1,7 @@
+
+body{
+  font-family: 'Droid Serif', serif !important;
+}
 /*Navbar */
 .navbar {
   background-color: #222222; }
@@ -15,9 +19,46 @@
     text-align: center;
     margin-top: 40vh;
     padding: 60px;
-    width: 50vh; }
+    width: auto; }
 
 /*About section */
+section {
+	position: relative;
+
+
+}
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+  background-color: #222222;
+}
+
+#bigTriangleColor path {
+	fill:#DDDDDD;
+	stroke:#DDDDDD;
+	stroke-width: 2;
+}
+svg#bigTriangleColor1 {
+	pointer-events: none;
+  background-color: #DDDDDD;
+}
+
+#bigTriangleColor1 path {
+	fill:#222222;
+	stroke:#222222;
+	stroke-width: 2;
+}
+svg {
+  display: block;
+}
+
+
 #about {
   min-height: 60vh;
   background-color: #DDDDDD;
@@ -41,6 +82,8 @@
     max-height: 200px;
     max-width: 200px;
     border-radius: 50%; }
+
+
 
 /*skills section */
 #skills {
@@ -209,3 +252,9 @@
     #contact i:hover {
       color: #222222;
       background-color: #DDDDDD; }
+
+#typed {
+  display: inline-block;
+  width:auto;
+  font-family: 'Droid Serif', serif;
+}
