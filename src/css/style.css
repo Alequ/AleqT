@@ -24,6 +24,10 @@
   padding-top: 80px;
   text-align: center;
   padding-bottom: 10vh; }
+  .description p{
+    text-align: left;
+    text-indent: 50px;
+  }
   #about hr {
     border-color: #222222 !important;
     border-width: 3px !important;
