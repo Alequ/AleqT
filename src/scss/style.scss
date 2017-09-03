@@ -3,14 +3,23 @@ $light-color : #DDDDDD;
 $dark-color: #222222;
 
 
+body {
+  font-family: 'Fjalla One', sans-serif !important;
+  font-weight:500 !important;
+    p{
+      font-family: "bitter", serif !important
+    }
+
+
+}
 
 /*Navbar */
 
 .navbar {
   background-color: $dark-color;
-
-
 }
+
+/*Intro */
 
 #intro {
     min-height: 100vh;
@@ -112,7 +121,7 @@ $dark-color: #222222;
 
 /*portofolio */
 
-#portofolio {
+.portofolio {
   background-color: $light-color;
   min-height:60vh;
   padding-bottom: 10vh;
@@ -187,7 +196,7 @@ $dark-color: #222222;
   }
 }
 
-#portofolio1 {
+.portofolio1 {
   background-color: $dark-color;
   min-height:60vh;
     hr {
@@ -274,4 +283,29 @@ $dark-color: #222222;
         background-color: $light-color
       }
     }
+}
+
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+  background-color: $dark-color;
+}
+
+#bigTriangleColor path {
+	fill:$light-color;
+	stroke:$light-color;
+	stroke-width: 2;
+}
+svg#bigTriangleColor1 {
+	pointer-events: none;
+  background-color: $light-color;
+}
+
+#bigTriangleColor1 path {
+	fill:$dark-color;
+	stroke:$dark-color;
+	stroke-width: 2;
+}
+svg {
+  display: block;
 }

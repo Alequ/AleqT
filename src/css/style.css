@@ -1,11 +1,14 @@
+body {
+  font-family: 'Fjalla One', sans-serif !important;
+  font-weight: 500 !important; }
+  body p {
+    font-family: "bitter", serif !important; }
 
-body{
-  font-family: 'Droid Serif', serif !important;
-}
 /*Navbar */
 .navbar {
   background-color: #222222; }
 
+/*Intro */
 #intro {
   min-height: 100vh;
   background-image: url("img/intro.png");
@@ -19,56 +22,15 @@ body{
     text-align: center;
     margin-top: 40vh;
     padding: 60px;
-    width: auto; }
+    width: 50vh; }
 
 /*About section */
-section {
-	position: relative;
-
-
-}
-section::before,
-section::after {
-	position: absolute;
-	content: '';
-	pointer-events: none;
-}
-/* Big Triangle */
-svg#bigTriangleColor {
-	pointer-events: none;
-  background-color: #222222;
-}
-
-#bigTriangleColor path {
-	fill:#DDDDDD;
-	stroke:#DDDDDD;
-	stroke-width: 2;
-}
-svg#bigTriangleColor1 {
-	pointer-events: none;
-  background-color: #DDDDDD;
-}
-
-#bigTriangleColor1 path {
-	fill:#222222;
-	stroke:#222222;
-	stroke-width: 2;
-}
-svg {
-  display: block;
-}
-
-
 #about {
   min-height: 60vh;
   background-color: #DDDDDD;
   padding-top: 80px;
   text-align: center;
   padding-bottom: 10vh; }
-  .description p{
-    text-align: left;
-    text-indent: 50px;
-  }
   #about hr {
     border-color: #222222 !important;
     border-width: 3px !important;
@@ -82,8 +44,6 @@ svg {
     max-height: 200px;
     max-width: 200px;
     border-radius: 50%; }
-
-
 
 /*skills section */
 #skills {
@@ -118,15 +78,15 @@ svg {
     padding: 20px; } }
 
 /*portofolio */
-#portofolio {
+.portofolio {
   background-color: #DDDDDD;
   min-height: 60vh;
   padding-bottom: 10vh; }
-  #portofolio hr {
+  .portofolio hr {
     border-color: #222222 !important;
     border-width: 3px !important;
     max-width: 50px !important; }
-  #portofolio .button {
+  .portofolio .button {
     font-size: 8px;
     font-size: 0.8rem;
     border: 2px solid #222222;
@@ -139,30 +99,30 @@ svg {
     text-transform: uppercase;
     letter-spacing: 0.20em;
     position: relative; }
-    #portofolio .button:hover {
+    .portofolio .button:hover {
       border: 2px solid #222222;
       background-color: #222222;
       color: #DDDDDD; }
-  #portofolio h2 {
+  .portofolio h2 {
     color: #222222;
     text-align: center;
     padding-bottom: 40px;
     padding-top: 10vh; }
-  #portofolio .row {
+  .portofolio .row {
     padding-top: 10vh; }
-  #portofolio h5 {
+  .portofolio h5 {
     font-size: 1.3rem;
     color: #888; }
-  #portofolio h3 {
+  .portofolio h3 {
     font-size: 2rem;
     line-height: 1.3em;
     margin-bottom: 5px; }
-  #portofolio .tags {
+  .portofolio .tags {
     list-style: none;
     margin: 0;
     padding: 0;
     margin: 45px auto; }
-    #portofolio .tags li {
+    .portofolio .tags li {
       font-size: 7px;
       font-size: 0.7rem;
       -webkit-background-clip: padding-box;
@@ -181,16 +141,16 @@ svg {
       padding: 3px 5px;
       margin: 0 3px; }
 
-#portofolio1 {
+.portofolio1 {
   background-color: #222222;
   min-height: 60vh; }
-  #portofolio1 hr {
+  .portofolio1 hr {
     border-color: #222222 !important;
     border-width: 3px !important;
     max-width: 50px !important; }
-  #portofolio1 p {
+  .portofolio1 p {
     color: #DDDDDD; }
-  #portofolio1 .button {
+  .portofolio1 .button {
     font-size: 8px;
     font-size: 0.8rem;
     border: 2px solid #DDDDDD;
@@ -203,26 +163,26 @@ svg {
     text-transform: uppercase;
     letter-spacing: 0.20em;
     position: relative; }
-    #portofolio1 .button:hover {
+    .portofolio1 .button:hover {
       border: 2px solid #DDDDDD;
       background-color: #DDDDDD;
       color: #222222; }
-  #portofolio1 .row {
+  .portofolio1 .row {
     padding-top: 10vh; }
-  #portofolio1 h5 {
+  .portofolio1 h5 {
     font-size: 1.3rem;
     color: #888; }
-  #portofolio1 h3 {
+  .portofolio1 h3 {
     font-size: 2rem;
     line-height: 1.3em;
     margin-bottom: 5px;
     color: #DDDDDD; }
-  #portofolio1 .tags {
+  .portofolio1 .tags {
     list-style: none;
     margin: 0;
     padding: 0;
     margin: 45px auto; }
-    #portofolio1 .tags li {
+    .portofolio1 .tags li {
       font-size: 7px;
       font-size: 0.7rem;
       -webkit-background-clip: padding-box;
@@ -253,8 +213,24 @@ svg {
       color: #222222;
       background-color: #DDDDDD; }
 
-#typed {
-  display: inline-block;
-  width:auto;
-  font-family: 'Droid Serif', serif;
-}
+/* Big Triangle */
+svg#bigTriangleColor {
+  pointer-events: none;
+  background-color: #222222; }
+
+#bigTriangleColor path {
+  fill: #DDDDDD;
+  stroke: #DDDDDD;
+  stroke-width: 2; }
+
+svg#bigTriangleColor1 {
+  pointer-events: none;
+  background-color: #DDDDDD; }
+
+#bigTriangleColor1 path {
+  fill: #222222;
+  stroke: #222222;
+  stroke-width: 2; }
+
+svg {
+  display: block; }
