@@ -235,3 +235,6 @@ svg#bigTriangleColor1 {
 
 svg {
   display: block; }
+
+#typed {
+  display: inline-block; }
