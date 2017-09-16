@@ -22,7 +22,7 @@ body {
 /*Intro */
 
 #intro {
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("img/intro.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,6 +41,26 @@ body {
 
     }
 
+      @media only screen and (max-width: 500px) {
+      h1 {
+          font-size: 24px;
+      }
+      h4{
+        font-size: 18px;
+      }
+      .textcard {
+        width:26vh;
+        padding: 0;
+        margin-top: 23vh;
+      }
+
+  }
+
+}
+@media only screen and (max-width: 500px) {
+    #intro {
+        height: 60vh;
+    }
 }
 
 
@@ -200,6 +220,7 @@ body {
 .portofolio1 {
   background-color: $dark-color;
   min-height:60vh;
+  padding-bottom: 10vh;
     hr {
        border-color: $dark-color !important;
        border-width: 3px !important;
@@ -284,6 +305,12 @@ body {
         background-color: $light-color
       }
     }
+
+    @media only screen and (max-width: 500px) {
+    i {
+        font-size: 26px;
+    }
+}
 }
 
 /* Big Triangle */
