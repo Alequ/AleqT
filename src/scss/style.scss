@@ -30,38 +30,14 @@ body {
     display: flex;
     background-attachment: fixed;
 
-
-    .textcard{
-
-        margin: auto;
-        text-align: center;
-        margin-top: 40vh;
-        padding: 60px;
-        width:50vh
-
+    .type-wrap {
+      margin-top:40vh;
+      text-align: center;
+      font-size:2.5em;
     }
 
-      @media only screen and (max-width: 500px) {
-      h1 {
-          font-size: 24px;
-      }
-      h4{
-        font-size: 18px;
-      }
-      .textcard {
-        width:26vh;
-        padding: 0;
-        margin-top: 23vh;
-      }
-
-  }
-
 }
-@media only screen and (max-width: 500px) {
-    #intro {
-        height: 60vh;
-    }
-}
+
 
 
 /*About section */
