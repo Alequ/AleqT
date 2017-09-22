@@ -9,8 +9,6 @@ body {
     p{
       font-family: "bitter", serif !important
     }
-
-
 }
 
 /*Navbar */
@@ -68,10 +66,10 @@ body {
    .avatar {
        max-height: 200px;
        max-width: 200px;
-       border-radius: 50%;
-  p{
-    font-weight:600;
-  }
+             border-radius: 50%;
+        p{
+          font-weight:600;
+        }
 
      }
 
@@ -81,8 +79,6 @@ body {
 
      }
  }
-
-
 }
 
 /*skills section */
@@ -98,7 +94,7 @@ body {
       border-width: 3px !important;
       max-width: 50px !important;
     }
-    h2 {
+  h2{
     color:white;
     text-align: center;
     padding-bottom: 40px;
@@ -106,7 +102,6 @@ body {
   .devicon-git-plain {
     max-width: 2em;
   }
-
 }
 
 
