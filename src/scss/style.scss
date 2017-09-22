@@ -31,10 +31,17 @@ body {
     background-attachment: fixed;
 
     .type-wrap {
-      margin-top:40vh;
+      margin-top:50vh;
       text-align: center;
       font-size:2.5em;
+      font-weight:800;
     }
+
+      @media only screen and (max-width: 500px) {
+      .type-wrap {
+          font-size:1.5em;
+      }
+  }
 
 }
 
@@ -62,9 +69,18 @@ body {
        max-height: 200px;
        max-width: 200px;
        border-radius: 50%;
-
+  p{
+    font-weight:600;
+  }
 
      }
+
+     @media only screen and (max-width: 500px) {
+     p {
+         font-size:0.75em;
+
+     }
+ }
 
 
 }
@@ -106,10 +122,10 @@ body {
 }
 
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 500px) {
   .skills i {
     display: inline-block;
-    font-size: 80px;
+    font-size: 40px;
     padding: 20px;
   }
 
@@ -127,6 +143,17 @@ body {
        border-width: 3px !important;
        max-width: 50px !important;
    }
+   a{
+     text-decoration: none;
+      color: $dark-color;
+      font-weight:700;
+   }
+    a:hover{
+      text-decoration: none;
+      color: $light-color;
+      background-color: $dark-color;
+    }
+
    .button {
     font-size: 8px;
     font-size: 0.8rem;
@@ -284,7 +311,7 @@ body {
 
     @media only screen and (max-width: 500px) {
     i {
-        font-size: 26px;
+        font-size: 25px;
     }
 }
 }

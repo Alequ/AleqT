@@ -18,9 +18,13 @@ body {
   display: flex;
   background-attachment: fixed; }
   #intro .type-wrap {
-    margin-top: 40vh;
+    margin-top: 50vh;
     text-align: center;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    font-weight: 800; }
+  @media only screen and (max-width: 500px) {
+    #intro .type-wrap {
+      font-size: 1.5em; } }
 
 /*About section */
 #about {
@@ -42,6 +46,11 @@ body {
     max-height: 200px;
     max-width: 200px;
     border-radius: 50%; }
+    #about .avatar p {
+      font-weight: 600; }
+  @media only screen and (max-width: 500px) {
+    #about p {
+      font-size: 0.75em; } }
 
 /*skills section */
 #skills {
@@ -70,10 +79,10 @@ body {
   .skills i:hover {
     background-color: #222222; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .skills i {
     display: inline-block;
-    font-size: 80px;
+    font-size: 40px;
     padding: 20px; } }
 
 /*portofolio */
@@ -85,6 +94,14 @@ body {
     border-color: #222222 !important;
     border-width: 3px !important;
     max-width: 50px !important; }
+  .portofolio a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700; }
+  .portofolio a:hover {
+    text-decoration: none;
+    color: #DDDDDD;
+    background-color: #222222; }
   .portofolio .button {
     font-size: 8px;
     font-size: 0.8rem;
@@ -214,7 +231,7 @@ body {
       background-color: #DDDDDD; }
   @media only screen and (max-width: 500px) {
     #contact i {
-      font-size: 26px; } }
+      font-size: 25px; } }
 
 /* Big Triangle */
 svg#bigTriangleColor {
