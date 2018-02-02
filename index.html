@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
   <!--Jquerry--->
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -23,34 +24,40 @@
 
 </head>
 
-  <body data-spy="scroll" data-target="#mainNavbar" data-offset="10">
+  <body >
 
+<!--Nav-bar-->
+    <div class="menu-collapsed">
+       <div class="bar"></div>
+       <nav>
+          <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#portofolio">Portofolio</a></li>
+          </ul>
+       </nav>
+    </div><!-- end nav-bar-->
 
+<!-- intro section-->
     <section id="intro" >
-      <div id="mainNavbar" class="navbar navbar-toggleable-md fixed-top navbar-inverse ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container" >
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <a href="#" class="navbar-brand">{Alex Turcu}</a>
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#intro" target="_blank">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about" target="_blank">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills" target="_blank">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portofolio" target="_blank">Portofolio</a>
-              </li>
-            </ul>
-          </div>
+      <div id="firstPage">
+        <div class="logo">
+        <img src="img/logo.png" alt="">
         </div>
-      </div>
+        <div class="type-wrap">
+          <span id="typed2" style="white-space:pre;"></span>
+        </div>
+        <div class="fontA">
+          <a  href="#about" class="scrollDown"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+      </div><!-- end first page div-->
+    </section><!-- end Intro section -->
+
+<!-- about section-->
+    <section id="about" class="ss-style-triangles" >
+      <h2>Let me introduce myself</h2>
+      <hr>
 
       <div class="container" >
         <div class="row">
@@ -61,11 +68,6 @@
         </div>
       </div>
 
-    </section>
-
-    <section id="about" class="ss-style-triangles" >
-      <h2>Let me introduce myself</h2>
-      <hr>
         <div class="container description">
           <div class="row">
             <div class="col-md-12">
@@ -77,25 +79,23 @@
           </div>
           <div class="col-md-6">
           <p>When I am met with a challenge, I am eager to methodically search for a solution using a working knowledge of base programming concepts and strong research skills. Likewise, I am keen to stay up to date with ever-changing modern frameworks, libraries, and languages.</p>
-          
-
 
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- end about section -->
 
     <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
     <path d="M0 0 L50 100 L100 0 Z" />
     </svg>
 
-
-    <section id = "skills">
+<!-- skills section-->
+    <section id="skills">
       <div class="container">
         <h2>Skills</h2>
         <hr>
-        <div class="skills row">
-          <div class="col-md-12 col-sm-12 " >
+        <div class="skillsGrid">
+
             <i class="devicon-html5-plain-wordmark "></i>
             <i class="devicon-css3-plain-wordmark "></i>
             <i class="devicon-javascript-plain "></i>
@@ -106,90 +106,50 @@
             <i class="devicon-git-plain-wordmark "></i>
             <i class="devicon-photoshop-line "></i>
             <i class="devicon-react-original-wordmark "></i>
-              <i class="devicon-atom-original-wordmark"></i>
-           </div>
+            <i class="devicon-atom-original-wordmark"></i>
+
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- end skills section-->
 
     <svg id="bigTriangleColor1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
     <path d="M0 0 L50 100 L100 0 Z" />
     </svg>
 
-    <section class="portofolio" id="portofolio" >
-      <div class="container">
+<!-- portofolio section -->
+    <section id="portofolio" >
         <h2>Portofolio</h2>
         <hr>
-        <div class="row">
-          <div class="col-md-6">
-            <img class="img-fluid" src="img/Crazylook.png" alt="">
-          </div>
-          <div class="col-md-6">
-            <h3>CrazyLook</h3>
-            <h5>Online store</h5>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>JQuery</li>
-              <li>Bootstrap</li>
-              <li>Sass</li>
-            </ul>
-            <p>Online store</p>
-            <a href="https://alequ.github.io/webstore/" class="button">View Website</a>
+
+      <div class="gallery">
+        <div class="item">
+          <img src="img/webstore.png">
+          <div class="item__overlay">
+            <a href="https://alequ.github.io/webstore/"><button>View</button></a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="portofolio1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img class="img-fluid" src="img/smarts.png" alt="">
-          </div>
-          <div class="col-md-6">
-            <h3>Smartz</h3>
-            <h5>Website Digital Marketing Agency</h5>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>Jquery</li>
-            </ul>
-            <p>Website of a Digital Marketing Company</p>
-            <a href="https://alequ.github.io/smartz/" class="button" target="_blank">View Website</a>
+        <div class="item">
+          <img src="img/smart.png">
+          <div class="item__overlay">
+            <a href="https://alequ.github.io/smartz/"><button>View</button></a>
           </div>
         </div>
-
-      </div>
-    </section>
-
-    <section class="portofolio" class="ss-style-triangles">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img class="img-fluid" src="img/tomatotimer.png" alt="">
-          </div>
-          <div class="col-md-6">
-            <h3>Pomodoro Timer</h3>
-            <h5>Web App</h5>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-            </ul>
-            <p>Web app, built with vanilla js. <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a> it's a time management method</p>
-            <a href=" https://alequ.github.io/pomodoro-clock/" target="_blank" class="button">View Website</a>
+        <div class="item ">
+          <img src="img/photographer.png">
+          <div class="item__overlay">
+            <a href="http://munteanuviorel.ro/"><button>View</button></a>
           </div>
         </div>
+      </div><!-- end galery div-->
 
-      </div>
-    </section>
+    </section><!-- end portofolio section-->
 
+
+
+
+
+<!-- contact section -->
     <section id="contact" class="">
       <div class="container text-center">
         <a href="https://www.facebook.com/Turcu.Alex" target='_blank'><i class="fa fa-facebook contact "></i></a>
@@ -197,7 +157,7 @@
         <a href="https://www.linkedin.com/in/ioan-alexandru-turcu-53807813b/" target='_blank'><i class="fa fa-linkedin contact"></i></a>
         <a href="https://github.com/Alequ" target='_blank'><i class="fa fa-github contact"></i></a>
       </div>
-    </section>
+    </section><!-- end contact section-->
 
 
     <script src="js/main.js"></script>

@@ -1,7 +1,8 @@
 
 //toggle class
 
-const devicon = document.querySelectorAll("i");
+const devicon =Array.from(document.querySelector(".skillsGrid").children);
+
 
 function addClass() {
   this.classList.add('colored');
@@ -34,4 +35,19 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
        window.location.hash = hash;
      });
 
+});
+
+
+
+$(function() {
+  $('.scrollDown').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+
+//Menu toggle
+$(".menu-collapsed").click(function() {
+  $(this).toggleClass("menu-expanded");
 });
