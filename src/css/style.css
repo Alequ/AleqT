@@ -80,9 +80,12 @@ body {
       transform: rotate(-45deg); }
 
 /*Intro */
-.scrollDown i {
-  animation: MoveUpDown 2s linear infinite;
-  position: absolute; }
+#intro {
+  height: 100vh;
+  background-color: #222222; }
+  #intro .scrollDown i {
+    animation: MoveUpDown 2s linear infinite;
+    position: absolute; }
 
 @keyframes MoveUpDown {
   0% {
@@ -91,10 +94,6 @@ body {
     bottom: 30px; }
   100% {
     bottom: 0; } }
-
-#intro {
-  height: 100vh;
-  background-color: #222222; }
   #intro #firstPage {
     display: grid;
     grid-template-rows: 600px 1fr 0.5fr;
@@ -107,9 +106,10 @@ body {
       color: #DDDDDD; }
     #intro #firstPage .logo {
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      justify-items: center; }
       #intro #firstPage .logo img {
-        max-width: 400px; }
+        max-width: 100%; }
     #intro #firstPage .fontA {
       color: #DDDDDD;
       text-align: center;
@@ -144,7 +144,7 @@ body {
       font-weight: 600; }
   @media only screen and (max-width: 500px) {
     #about p {
-      font-size: 0.75em; } }
+      font-size: 0.90em; } }
 
 /*skills section */
 #skills {
@@ -165,8 +165,8 @@ body {
     max-width: 2em; }
   #skills .skillsGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 100px));
+    grid-gap: 20px;
     color: #8f8f8f; }
   #skills .skillsGrid i {
     font-size: 80px;
@@ -191,7 +191,8 @@ body {
     padding-top: 10vh; }
   #portofolio .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
     margin-top: 50px; }
   #portofolio .item {
     overflow: hidden;
@@ -202,7 +203,6 @@ body {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     width: 100%;
-    height: 100%;
     object-fit: cover; }
   #portofolio .item__overlay {
     background: #ffc60032;
@@ -260,7 +260,7 @@ body {
     #contact i {
       font-size: 25px; } }
 
-/* Big Triangle */
+/* Big Triangle style*/
 svg#bigTriangleColor {
   pointer-events: none;
   background-color: #222222; }
