@@ -1,5 +1,5 @@
 
-//toggle class
+//toggle class dev icon
 
 const devicon =Array.from(document.querySelector(".skillsGrid").children);
 
@@ -18,7 +18,7 @@ devicon.forEach(icon => icon.addEventListener("mouseleave", removeClass))
 
 
 
-//Smooth scrooling snippet
+//Smooth scrooling
 
 
 $(".navbar-nav li a[href^='#']").on('click', function(e) {
@@ -36,8 +36,6 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
      });
 
 });
-
-
 
 $(function() {
   $('.scrollDown').on('click', function(e) {

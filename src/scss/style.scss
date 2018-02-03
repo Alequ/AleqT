@@ -134,8 +134,8 @@ body {
     #firstPage {
 
       display: grid;
-      grid-template-rows: 600px 1fr 0.5fr;
-      grid-template-columns: 1fr;
+      grid-template-rows: 400px 1fr 0.5fr;
+      grid-template-columns: auto;
       grid-gap:50px;
 
       .type-wrap {
@@ -151,7 +151,7 @@ body {
         justify-items::center;
 
         img{
-          max-width:100%;
+          width: 20vh;
         }
 
       }

@@ -96,8 +96,8 @@ body {
     bottom: 0; } }
   #intro #firstPage {
     display: grid;
-    grid-template-rows: 600px 1fr 0.5fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr 0.5fr;
+    grid-template-columns: auto;
     grid-gap: 50px; }
     #intro #firstPage .type-wrap {
       text-align: center;
@@ -109,7 +109,7 @@ body {
       justify-self: center;
       justify-items: center; }
       #intro #firstPage .logo img {
-        max-width: 100%; }
+        width: 20vh; }
     #intro #firstPage .fontA {
       color: #DDDDDD;
       text-align: center;
