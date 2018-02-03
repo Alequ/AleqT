@@ -82,7 +82,7 @@ body {
 /*Intro */
 #intro {
   height: 100vh;
-  background-color: #222222; }
+  background-color: #1F1F1F; }
   #intro .scrollDown i {
     animation: MoveUpDown 2s linear infinite;
     position: absolute; }
@@ -128,11 +128,11 @@ body {
   text-align: center;
   padding-bottom: 10vh; }
   #about hr {
-    border-color: #222222 !important;
+    border-color: #1F1F1F !important;
     border-width: 3px !important;
     max-width: 50px !important; }
   #about h2 {
-    color: #222222;
+    color: #1F1F1F;
     text-align: center;
     padding-bottom: 40px;
     padding-top: 6vh; }
@@ -149,7 +149,7 @@ body {
 /*skills section */
 #skills {
   min-height: 60vh;
-  background-color: #222222;
+  background-color: #1F1F1F;
   padding-top: 80px;
   padding-bottom: 10vh;
   text-align: center; }
@@ -167,13 +167,15 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 100px));
     grid-gap: 20px;
-    color: #8f8f8f; }
+    color: #8f8f8f;
+    justify-content: center;
+    justify-items: center; }
   #skills .skillsGrid i {
     font-size: 80px;
     padding: 40px;
     text-align: center; }
     #skills .skillsGrid i:hover {
-      background-color: #222222; }
+      background-color: #1F1F1F; }
 
 /*portofolio */
 #portofolio {
@@ -181,7 +183,7 @@ body {
   min-height: 60vh;
   padding-bottom: 10vh; }
   #portofolio hr {
-    border-color: #222222 !important;
+    border-color: #1F1F1F !important;
     border-width: 3px !important;
     max-width: 50px !important; }
   #portofolio h2 {
@@ -247,14 +249,14 @@ body {
 
 /*Contact */
 #contact {
-  background-color: #222222;
+  background-color: #1F1F1F;
   padding: 50px; }
   #contact i {
     font-size: 40px;
     padding: 10px;
     color: #DDDDDD; }
     #contact i:hover {
-      color: #222222;
+      color: #1F1F1F;
       background-color: #DDDDDD; }
   @media only screen and (max-width: 500px) {
     #contact i {
@@ -263,7 +265,7 @@ body {
 /* Big Triangle style*/
 svg#bigTriangleColor {
   pointer-events: none;
-  background-color: #222222; }
+  background-color: #1F1F1F; }
 
 #bigTriangleColor path {
   fill: #DDDDDD;
@@ -275,8 +277,8 @@ svg#bigTriangleColor1 {
   background-color: #DDDDDD; }
 
 #bigTriangleColor1 path {
-  fill: #222222;
-  stroke: #222222;
+  fill: #1F1F1F;
+  stroke: #1F1F1F;
   stroke-width: 2; }
 
 svg {

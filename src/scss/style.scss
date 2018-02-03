@@ -1,6 +1,6 @@
 // variables
 $light-color : #DDDDDD;
-$dark-color: #222222;
+$dark-color: #1F1F1F;
 
 
 body {
@@ -237,11 +237,14 @@ body {
     grid-template-columns: repeat( auto-fit, minmax(40px, 100px) );
     grid-gap: 20px;
     color: #8f8f8f;;
+    justify-content: center;
+    justify-items: center;
   }
   .skillsGrid i {
 
     font-size: 80px;
     padding: 40px;
+
 
     text-align: center;
     &:hover {
